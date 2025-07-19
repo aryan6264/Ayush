@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DAKU 302 PANEL</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+    .logo {
+      width: 200px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: red;
+      font-size: 40px;
+      text-shadow: 2px 2px #ff0000;
+    }
+    label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    .start-btn {
+      background-color: green;
+      color: white;
+    }
+    .stop-btn {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.imgur.com/nZKwzJV.png" alt="Tiger" class="logo" />
+  <h1>DAKU 302 PANEL</h1>
+  <form action="/start" method="post">
+    <label>😎 Taken By:</label><br>
+    <input type="text" name="taken" /><br>
+    <label>📂 File:</label><br>
+    <input type="file" name="file" /><br>
+    <label>🕒 Time:</label><br>
+    <input type="text" name="time" /><br>
+    <label>😡 Haters Name:</label><br>
+    <input type="text" name="haters" /><br><br>
+    <button class="start-btn">🚀 RUN</button>
+  </form>
+  <form action="/stop" method="post">
+    <button class="stop-btn">🛑 STOP</button>
+  </form>
+</body>
+</html>
